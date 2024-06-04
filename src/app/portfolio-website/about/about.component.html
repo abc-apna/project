@@ -1,0 +1,32 @@
+<p>about works!</p>
+<app-navbar></app-navbar>
+<div class=" about-me-container">
+    
+    <div class="main-content animate_animated animate_fadeInUp">
+    <div class="education-section">
+        <div id="skills-section" class="skills-section animate_animated animate_fadeInUp">
+            <p style="font-size: 25px; color: #6b08a6;">Education details</p>
+
+        </div>
+        <p>university name</p>
+        <p>degree name</p>
+        <p>Graduation year</p>
+
+    </div>
+    <div class="project-section"> 
+        <div id="skills-section" class="skills-section animate_animated animate_fadeInUp">
+            <p style="font-size: 25px; color: #6b08a6;"> project details</p>
+
+        </div>
+        <div class="project-card" *ngFor="let project of projects">
+            <h4>{{project.name}}</h4>
+            <p>{{project.description}}</p>
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+<app-footer></app-footer>
